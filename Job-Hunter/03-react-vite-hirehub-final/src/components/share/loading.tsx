@@ -6,7 +6,7 @@ const Loading = () => {
 
     return (
         <div style={style}>
-            <HashLoader color="#36d7b7" />
+            <HashLoader color="#3498db" />
         </div>
     )
 }

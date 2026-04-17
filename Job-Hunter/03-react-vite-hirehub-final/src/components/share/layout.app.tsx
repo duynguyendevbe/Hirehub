@@ -1,6 +1,5 @@
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { setRefreshTokenAction } from "@/redux/slice/accountSlide";
-import { message } from "antd";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -18,7 +17,7 @@ const LayoutApp = (props: IProps) => {
     useEffect(() => {
         if (isRefreshToken === true) {
             localStorage.removeItem('access_token')
-            message.error(errorRefreshToken);
+            alert(errorRefreshToken || 'Session expired. Please login again.');
             dispatch(setRefreshTokenAction({ status: false, message: "" }))
             navigate('/login');
         }

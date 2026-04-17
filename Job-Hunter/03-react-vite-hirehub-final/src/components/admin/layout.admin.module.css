@@ -1,0 +1,141 @@
+.adminLayout {
+  display: flex;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  border-right: 1px solid #34495e;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebarHeader {
+  padding: 20px 15px;
+  border-bottom: 1px solid #34495e;
+  background-color: #1a252f;
+  display: flex;
+  align-items: center;
+}
+
+.sidebarHeader h5 {
+  color: #3498db;
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.sidebarNav {
+  flex: 1;
+  padding: 10px 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  color: #bdc3c7;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+  gap: 10px;
+}
+
+.navItem:hover {
+  background-color: #34495e;
+  color: #3498db;
+  border-left-color: #3498db;
+}
+
+.navItem.active {
+  background-color: #3498db;
+  color: #fff;
+  border-left-color: #2980b9;
+}
+
+.navIcon {
+  display: flex;
+  align-items: center;
+  width: 20px;
+}
+
+.navLabel {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.topbar {
+  background-color: #fff;
+  border-bottom: 1px solid #dee2e6;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.topbarRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.welcome {
+  font-weight: 500;
+  color: #2c3e50;
+  font-size: 14px;
+}
+
+.userDropdown {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3498db !important;
+  color: #fff !important;
+  border: none !important;
+  font-weight: bold;
+}
+
+.userDropdown:hover {
+  background-color: #2980b9 !important;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .adminLayout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .mainContent {
+    height: calc(100vh - 60px);
+  }
+}

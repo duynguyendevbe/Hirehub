@@ -1,0 +1,84 @@
+.loginPage {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.subheading {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
+
+.link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Register Page */
+.registerPage {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form Styling */
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formLabel {
+  font-weight: 500;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.formControl {
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.formControl:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+}
+
+.inputGroupText {
+  background-color: #f8f9fa;
+  border: 1px solid #bdc3c7;
+  color: #7f8c8d;
+  padding: 8px 12px;
+}
